@@ -1,5 +1,4 @@
-# Project 4
-Used Car Market Analysis
+# Used Car Market Analysis
 
 Project Description:
 This project emphasizes the practice of building and deploying a web application that visualizes insights from a dataset of U.S. used car listings. You can find interactive visualizations that explore:
