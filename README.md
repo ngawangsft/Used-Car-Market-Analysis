@@ -1,33 +1,35 @@
 # Used Car Market Analysis
 
-Project Description:
-This project emphasizes the practice of building and deploying a web application that visualizes insights from a dataset of U.S. used car listings. You can find interactive visualizations that explore:
+## Overview
+This project is an interactive web application that visualizes key insights from a dataset of U.S. used car listings. By building a dashboard with **Streamlit** and **Plotly**, I created a tool that helps car buyers, sellers, and dealers quickly understand market trends – from price distributions and depreciation patterns to the dominance of various vehicle types. The app allows users to filter data interactively, making it easy to explore questions like “How does mileage affect price?” or “Which vehicle types hold their value best?”
 
-1) How used car prices are distributed
-2) The effect of mileage on price across different fuel types
-3) Which vehicle types retain value better over time
-4) R² values by vehicle type to measure model performance
-5) The dominance of various vehicle types in listings
+## Business Problem
+The used car market is large, fragmented, and driven by many factors – price, age, mileage, fuel type, and vehicle type. Sellers need to set competitive prices; buyers want to know what’s a fair deal; and dealers need to stock inventory that will sell. Without a centralized, interactive tool, these stakeholders rely on guesswork or time‑consuming manual research. This dashboard solves that by providing real‑time visual insights that help users make data‑driven decisions.
 
-Methods and Libraries Used:
-This project makes use of the following tools and libraries:
+## Key Insights & Highlights
+The dashboard presents five main visualizations, each answering a core business question: 
 
-1) pandas – For data manipulation, filtering, and analysis
-2) plotly.express – To create plots like histograms, scatterplots, and bar charts
-3) streamlit – To build an interactive web dashboard with checkboxes, headers, and embedded visualizations
-4) plotly.graph_objects – For customizing the bar chart of R² values by vehicle type
-5) %matplotlib inline – Only used in the notebook, to display matplotlib plots inline
-6) matplotlib.pyplot – Only used in the notebook, for a static bar chart of R² values (not used in the Streamlit version)
-7) seaborn – For creating visually appealing statistical plots such as scatterplots and bar charts
+| Question | Key Finding |
+|----------|-------------|
+| **How are used cars priced?** | Most used cars are priced between $3,000 and $10,000; the distribution is right‑skewed, with a long tail of luxury/rare vehicles above $40,000. |
+| **How does mileage affect price across fuel types?** | Gasoline vehicles depreciate fastest with mileage; diesel vehicles retain value better; hybrid and electric cars are still rare in the dataset. |
+| **Which vehicle types hold their value better?** | Off‑road vehicles and pickups show the strongest price‑age relationship (R² = 0.61 and 0.56), meaning their value depreciation is most predictable. Convertibles and “other” types have the weakest relationship (R² ≈ 0.15). |
+| **R² value by vehicle type** | A dedicated bar chart quantifies how well age explains price variation for each vehicle type, highlighting the most predictable segments. |
+| **What kinds of cars dominate listings?** | SUVs, sedans, and trucks together make up over 70% of listings; pickups, coupes, and wagons account for most of the remainder. |
 
-Instructions to Run Project Locally:
-1) Clone the repository or download project files
-2) Must have Python installed
-3) Use a virtual environment:
-    python -m venv venv
-    source venv/bin/activate   #On Windows use: venv\Scripts\activate
-4) Install the required libraries:
-    pip install -r requirements.txt
-5) Launch the Streamlit app:
-    streamlit run app.py
-6) Browser will open automatically, if not, the URL is shown in terminal
+## Tools & Technologies
+- **Python** – data manipulation and analysis  
+- **pandas** – cleaning and preparing the dataset  
+- **Streamlit** – building the interactive web dashboard  
+- **Plotly Express & Graph Objects** – creating interactive charts  
+- **Seaborn / Matplotlib** – used for static exploration in the notebook  
+- **Render** – hosting the deployed application  
+
+## Dataset
+The data comes from a public CSV file of used car advertisements (originally from a Kaggle dataset). It includes fields such as price, model year, odometer, fuel type, transmission, and vehicle type. The file is named `vehicles.csv` and is placed in the root of the project.
+
+## How to Run the Project Locally
+1. **Clone the repository**  
+   ```bash
+   git clone https://github.com/ngawangsft/Used-Car-Market-Analysis.git
+   cd used-car-market-analysis
