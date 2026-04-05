@@ -4,7 +4,7 @@
 This project is an interactive web application that visualizes key insights from a dataset of U.S. used car listings. By building a dashboard with **Streamlit** and **Plotly**, I created a tool that helps car buyers, sellers, and dealers quickly understand market trends – from price distributions and depreciation patterns to the dominance of various vehicle types. The app allows users to filter data interactively, making it easy to explore questions like “How does mileage affect price?” or “Which vehicle types hold their value best?”
 
 ## Business Problem
-The used car market is large, fragmented, and driven by many factors – price, age, mileage, fuel type, and vehicle type. Sellers need to set competitive prices; buyers want to know what’s a fair deal; and dealers need to stock inventory that will sell. Without a centralized, interactive tool, these stakeholders rely on guesswork or time‑consuming manual research. This dashboard solves that by providing real‑time visual insights that help users make data‑driven decisions.
+The used car market is huge, fragmented, and driven by many factors – price, age, mileage, fuel type, and vehicle type. Sellers need to set competitive prices; buyers want to know what’s a fair deal; and dealers need to stock inventory that will sell. Without a centralized, interactive tool, these stakeholders rely on guesswork or time‑consuming manual research. This dashboard solves that by providing real‑time visual insights that help users make data‑driven decisions.
 
 ## Key Insights & Highlights
 The dashboard presents five main visualizations, each answering a core business question: 
